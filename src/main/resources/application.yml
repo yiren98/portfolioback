@@ -1,3 +1,6 @@
+server:
+  port: ${PORT:8080}
+
 spring:
   mail:
     host: ${SPRING_MAIL_HOST}
@@ -10,4 +13,7 @@ spring:
           auth: true
           starttls:
             enable: ${SPRING_MAIL_STARTTLS:true}
+          ssl:
+            enable: ${SPRING_MAIL_SSL:false}
+
 
