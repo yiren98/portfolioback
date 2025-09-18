@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "*") // 前端和后端分离时必须允许 CORS
+@CrossOrigin(origins = "https://portfolio-mauve-five-80.vercel.app") // 前端和后端分离时必须允许 CORS
 public class ContactController {
 
     private final MailService mailService;
