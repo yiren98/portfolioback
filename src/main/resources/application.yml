@@ -3,16 +3,19 @@ server:
 
 spring:
   mail:
-    host: ${SPRING_MAIL_HOST}
-    port: ${SPRING_MAIL_PORT:587}
-    username: ${SPRING_MAIL_USERNAME}
-    password: ${SPRING_MAIL_PASSWORD}
+    host: smtp.gmail.com
+    port: 587
+    username: ren980602@gmail.com   # 你的 Gmail
+    password: ilhgjybtsegojpsd      # 你的应用专用密码
     properties:
-      mail.smtp.auth: true
-      mail.smtp.starttls.enable: ${SPRING_MAIL_STARTTLS:true}
-      mail.smtp.ssl.enable: ${SPRING_MAIL_SSL:false}
-      # 可选：打开调试日志，便于定位
-      mail.debug: true
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          ssl:
+            enable: false
+
 
 
 
